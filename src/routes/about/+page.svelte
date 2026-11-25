@@ -1,12 +1,12 @@
 <script lang="ts">
   import PageShell from "#lib/components/PageShell.svelte";
   import NowPlaying from "#lib/components/NowPlaying.svelte";
-	import Avatar from "#lib/components/Avatar.svelte";
+  import Avatar from "#lib/components/Avatar.svelte";
   import nikoImage from "#lib/assets/niko.jpg";
   import { onMount } from "svelte";
   import { playPage } from "../../lib/sfx";
 
-  const DATE_OF_BIRTH = new Date("2006-01-01T00:00:00");
+  const DATE_OF_BIRTH = new Date("2011-03-24T00:00:00");
 
   const YEAR_MS = 365.2425 * 24 * 60 * 60 * 1000;
 

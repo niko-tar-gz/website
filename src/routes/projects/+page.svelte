@@ -201,10 +201,30 @@
   @media (max-width: 720px) {
     .projects {
       grid-template-columns: minmax(0, 1fr);
+      gap: 1.5rem;
+    }
+
+    .detail {
+      order: -1;
+      align-items: center;
+      gap: 1rem;
+      text-align: center;
     }
 
     .big {
-      max-width: 22rem;
+      max-width: min(13rem, 28vh);
+    }
+
+    p {
+      margin-inline: auto;
+    }
+
+    .links {
+      justify-content: center;
+    }
+
+    .grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
 

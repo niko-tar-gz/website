@@ -145,6 +145,13 @@
     max-width: 64rem;
   }
 
+  @media (hover: none) {
+    .back {
+      padding: 0.75rem;
+      margin: -0.75rem;
+    }
+  }
+
   @media (prefers-reduced-motion: reduce) {
     .page,
     .page.leaving {

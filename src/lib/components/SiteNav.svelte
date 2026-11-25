@@ -131,6 +131,17 @@
 		outline-offset: 4px;
 	}
 
+	@media (hover: none) {
+		.site-nav {
+			right: max(1.5rem, env(safe-area-inset-right));
+			bottom: max(1.75rem, env(safe-area-inset-bottom));
+		}
+
+		.site-nav a {
+			min-height: 44px;
+		}
+	}
+
 	@media (prefers-reduced-motion: reduce) {
 		.site-nav {
 			transition: none;

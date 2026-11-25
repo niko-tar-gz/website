@@ -416,6 +416,7 @@
     let mouseX = -1e5;
     let mouseY = -1e5;
     let spread = 0;
+    const touchOnly = window.matchMedia("(hover: none)").matches;
 
     function stepSpread(dt: number) {
       const cX = width * 0.11;
@@ -423,7 +424,9 @@
       const reach = Math.min(width, height) * 0.5;
       const dist = Math.hypot(mouseX - cX, mouseY - cY);
       const near = Math.max(0, 1 - dist / reach);
-      const target = near * near * (3 - 2 * near);
+      const target = touchOnly
+        ? 1
+        : near * near * (3 - 2 * near);
       spread += (target - spread) * (1 - Math.exp(-dt * 2.2));
     }
 

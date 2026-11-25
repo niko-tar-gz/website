@@ -43,7 +43,8 @@
 
   img {
     grid-area: 1 / 1;
-    max-width: none;
+    max-width: 80vw;
+    height: auto;
     opacity: 0;
   }
 
